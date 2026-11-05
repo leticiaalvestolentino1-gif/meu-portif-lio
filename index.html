@@ -150,6 +150,21 @@
       font-size: 13px;
       line-height: 1.65;
     }
+    .training-info { display: grid; gap: 14px; justify-items: start; }
+    .training-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 15px;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease;
+    }
+    .training-more:hover { background: #c9563d; }
+    .training-more:focus-visible { outline: 2px solid var(--white); outline-offset: 3px; }
     .course-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -244,7 +259,10 @@
         <p class="section-label">Aprendizado contínuo</p>
         <div class="training-heading">
           <h2 id="training-title">Cursos realizados</h2>
-          <p class="training-note">Conhecimentos desenvolvidos para o dia a dia profissional e o universo da tecnologia.</p>
+          <div class="training-info">
+            <p class="training-note">Formação realizada na AFESU Morro Velho, em parceria com o SENAI, com certificação SENAI.</p>
+            <a class="training-more" href="https://www.sp.senai.br/unidade/leopoldina/informacoes-aos-alunos" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
         <div class="course-list">
           <article class="course">
